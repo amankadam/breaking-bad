@@ -1,5 +1,4 @@
 import React from 'react';
-import history from '../history';
 import axios from 'axios';
 import CharacterCard from './CharacterCard';
 import ReactPaginate from 'react-paginate';
