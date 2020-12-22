@@ -1,0 +1,113 @@
+body{
+    background: url('./wallpaper.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
+
+.logo{
+    margin-top:-10;
+    height: 50px;
+    width: 100px;
+    padding: 0%;
+    justify-content: center;
+}
+.card{
+    padding: 0px 0px 0px 0px;
+    width: 180px;
+    background-color:rgba(176, 176, 176, 0.17);
+}
+.characterGrid{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto auto;
+}
+.characterDetails{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.charDetailsImage{
+    height: 400px;
+    width: 400px;
+    border-radius: 6px;
+}
+.charImage{
+    height: 200px;
+    width: 185px;
+    border-radius: 4px;
+}
+.cardContent{
+    padding-left: 10px;
+}
+.search{
+    margin-left: 30%;
+    padding-top: 5px;
+}
+.goldenYellow{
+    font-family:'Libre Baskerville';
+    font-size:14;
+    color:#ff9f00;
+    text-shadow:1px 1px #000;
+}
+
+.navBar{
+display: flex;
+}
+.pagination {
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    outline: none;
+  }
+  .pagination > .active > a{
+    background-color: #000 ;
+    border-color: #000 ;
+    color: #000;
+  }
+  .pagination > li > a{
+    border: 1px solid #fff ;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+  }
+  .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+    background-color: #fff ;
+    border-color: #fff;
+    outline: none ;
+  }
+  .pagination > li > a, .pagination > li > span{
+    color: #fff
+  }
+  .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+    border-radius: unset
+  }
+  @media only screen and (min-width:950px){
+    .characterGrid{
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+@media only screen and (max-width:950px){
+    .characterGrid{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+@media only screen and (max-width:820px){
+    .characterGrid{
+        grid-template-columns: auto auto auto;
+    }
+    .search{
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width:520px){
+    .characterGrid{
+        grid-template-columns: auto auto ;
+    }
+}
